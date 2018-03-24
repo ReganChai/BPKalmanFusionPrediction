@@ -208,7 +208,7 @@ int main()
 
 	}
 
-	// 6、将神经网络预测值、卡尔曼状态方程计算值、融合值（最优估计值）保存在本地文本
+	// 6、将神经网络预测值、卡尔曼状态方程计算值、融合值（最优估计值）保存到本地文本
 	ofstream bpfile("BP_Point.txt");
 	for ( vector<Point>::iterator it = BP.begin( ); it != BP.end( ); it++ ) { 
 		bpfile << it->x << "," << it->y << "," << endl;
